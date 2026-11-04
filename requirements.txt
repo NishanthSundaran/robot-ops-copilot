@@ -1,0 +1,12 @@
+# GPU torch first: uv pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+# (installing sentence-transformers alone pulls a newer torch built for CUDA 13; pin torch before it)
+sentence-transformers==6.2.0
+transformers==5.22.1
+rank-bm25==0.2.2
+pymupdf==2.1
+numpy==2.4.6
+requests==2.34.2
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2
+pytest
