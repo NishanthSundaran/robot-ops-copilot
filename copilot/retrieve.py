@@ -19,6 +19,7 @@ from rank_bm25 import BM25Okapi
 from copilot.config import EMBED_MODEL, INDEX, OLLAMA, RERANK_MODEL
 
 TOKEN = re.compile(r"\w+", re.UNICODE)
+CODE = re.compile(r"\bC\d{1,3}(?:A\d{1,4})?\b", re.I)
 MODES = ("bm25", "dense", "hybrid", "hybrid+rerank")
 
 
@@ -47,6 +48,7 @@ def chunk_text(c: dict) -> str:
 class Retriever:
     def __init__(self, rerank: bool = True):
         self.chunks = [json.loads(ln) for ln in open(INDEX / "chunks.jsonl")]
+        self.by_id = {c["id"]: c for c in self.chunks}
         self.bm25 = BM25Okapi([tokenize(chunk_text(c)) for c in self.chunks])
         self.dense = np.load(INDEX / "dense.npy")
         assert len(self.dense) == len(self.chunks), "dense index is stale: python -m copilot.retrieve --build"
@@ -94,12 +96,32 @@ class Retriever:
                     scores[i] = scores.get(i, 0.0) + 1.0 / (60 + r)
             order = sorted(scores, key=scores.get, reverse=True)
         order = [i for i in order if mask[i]]
+        exact = self._code_hits(query, mask)
         if mode == "hybrid+rerank":
             cand = order[:pool]
             rs = self.reranker.predict([(query, chunk_text(self.chunks[i])) for i in cand], batch_size=16)
-            best = np.argsort(-np.asarray(rs))[:k]
-            return [(self.chunks[cand[j]], float(rs[j])) for j in best]
-        return [(self.chunks[i], float(scores[i])) for i in order[:k]]
+            best = [cand[j] for j in np.argsort(-np.asarray(rs))]
+            sc = {cand[j]: float(rs[j]) for j in range(len(cand))}
+            top = max(sc.values()) if sc else 0.0
+        else:
+            best, sc = order, scores
+            top = max(sc.values()) if sc else 0.0
+        # an error code in the query is an exact identifier: its chunk goes first, whatever the scores say
+        ranked = exact + [i for i in best if i not in exact]
+        return [(self.chunks[i], sc.get(i, top)) for i in ranked[:k]]
+
+    def _code_hits(self, query: str, mask) -> list[int]:
+        codes = {c.upper() for c in CODE.findall(query)}
+        if not codes:
+            return []
+        out = []
+        for i, c in enumerate(self.chunks):
+            if mask[i] and c["source"] == "ur_errors" and any(re.search(rf"\b{code}\b", c["text"]) for code in codes):
+                out.append(i)
+        # the group chunk that lists the full code (C158A1) before one that only shares the group (C158)
+        full = [i for i in out if any(re.search(rf"\b{code}\b", self.chunks[i]["text"]) and "A" in code
+                                      for code in codes)]
+        return (full + [i for i in out if i not in full])[:2]
 
 
 def build() -> None:

@@ -4,17 +4,17 @@
    {
     "id": "q000",
     "type": "manual",
-    "rank": 3
+    "rank": 5
    },
    {
     "id": "q001",
     "type": "manual",
-    "rank": 10
+    "rank": null
    },
    {
     "id": "q002",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q003",
@@ -44,12 +44,12 @@
    {
     "id": "q008",
     "type": "manual",
-    "rank": 4
+    "rank": 7
    },
    {
     "id": "q009",
     "type": "manual",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q010",
@@ -59,7 +59,7 @@
    {
     "id": "q011",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q012",
@@ -74,7 +74,7 @@
    {
     "id": "q014",
     "type": "manual",
-    "rank": 10
+    "rank": 3
    },
    {
     "id": "q015",
@@ -84,7 +84,7 @@
    {
     "id": "q016",
     "type": "manual",
-    "rank": 2
+    "rank": 3
    },
    {
     "id": "q017",
@@ -104,12 +104,12 @@
    {
     "id": "q020",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q021",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q022",
@@ -119,17 +119,17 @@
    {
     "id": "q023",
     "type": "manual_de",
-    "rank": 2
+    "rank": 4
    },
    {
     "id": "q024",
     "type": "manual_de",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q025",
     "type": "manual_de",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q026",
@@ -139,7 +139,7 @@
    {
     "id": "q027",
     "type": "manual_de",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q028",
@@ -149,7 +149,7 @@
    {
     "id": "q029",
     "type": "manual_de",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q030",
@@ -179,12 +179,12 @@
    {
     "id": "q035",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q036",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q037",
@@ -199,42 +199,42 @@
    {
     "id": "q039",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q040",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q041",
     "type": "error",
-    "rank": 3
+    "rank": 1
    },
    {
     "id": "q042",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q043",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q044",
     "type": "error",
-    "rank": 3
+    "rank": 1
    },
    {
     "id": "q045",
     "type": "error",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q046",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q047",
@@ -244,12 +244,12 @@
    {
     "id": "q048",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q049",
     "type": "error",
-    "rank": 7
+    "rank": 1
    },
    {
     "id": "q050",
@@ -494,7 +494,7 @@
    {
     "id": "q098",
     "type": "param",
-    "rank": 8
+    "rank": 7
    },
    {
     "id": "q099",
@@ -527,8 +527,8 @@
     "rank": null
    }
   ],
-  "latency_ms_p50": 8.7,
-  "latency_ms_p95": 14.1
+  "latency_ms_p50": 8.2,
+  "latency_ms_p95": 11.7
  },
  "dense": {
   "rows": [
@@ -540,12 +540,12 @@
    {
     "id": "q001",
     "type": "manual",
-    "rank": 7
+    "rank": 3
    },
    {
     "id": "q002",
     "type": "manual",
-    "rank": 3
+    "rank": 4
    },
    {
     "id": "q003",
@@ -555,7 +555,7 @@
    {
     "id": "q004",
     "type": "manual",
-    "rank": 5
+    "rank": 10
    },
    {
     "id": "q005",
@@ -585,7 +585,7 @@
    {
     "id": "q010",
     "type": "manual",
-    "rank": 6
+    "rank": 8
    },
    {
     "id": "q011",
@@ -605,7 +605,7 @@
    {
     "id": "q014",
     "type": "manual",
-    "rank": 3
+    "rank": 2
    },
    {
     "id": "q015",
@@ -615,7 +615,7 @@
    {
     "id": "q016",
     "type": "manual",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q017",
@@ -630,7 +630,7 @@
    {
     "id": "q019",
     "type": "manual",
-    "rank": 3
+    "rank": 1
    },
    {
     "id": "q020",
@@ -645,7 +645,7 @@
    {
     "id": "q022",
     "type": "manual_de",
-    "rank": 3
+    "rank": 5
    },
    {
     "id": "q023",
@@ -655,7 +655,7 @@
    {
     "id": "q024",
     "type": "manual_de",
-    "rank": 4
+    "rank": 7
    },
    {
     "id": "q025",
@@ -670,7 +670,7 @@
    {
     "id": "q027",
     "type": "manual_de",
-    "rank": 7
+    "rank": 5
    },
    {
     "id": "q028",
@@ -680,7 +680,7 @@
    {
     "id": "q029",
     "type": "manual_de",
-    "rank": null
+    "rank": 3
    },
    {
     "id": "q030",
@@ -695,7 +695,7 @@
    {
     "id": "q032",
     "type": "manual_de",
-    "rank": 3
+    "rank": 5
    },
    {
     "id": "q033",
@@ -710,7 +710,7 @@
    {
     "id": "q035",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q036",
@@ -730,7 +730,7 @@
    {
     "id": "q039",
     "type": "error",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q040",
@@ -745,7 +745,7 @@
    {
     "id": "q042",
     "type": "error",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q043",
@@ -755,7 +755,7 @@
    {
     "id": "q044",
     "type": "error",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q045",
@@ -780,7 +780,7 @@
    {
     "id": "q049",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q050",
@@ -795,7 +795,7 @@
    {
     "id": "q052",
     "type": "error_symptom",
-    "rank": 3
+    "rank": 2
    },
    {
     "id": "q053",
@@ -1015,7 +1015,7 @@
    {
     "id": "q096",
     "type": "param",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q097",
@@ -1055,11 +1055,11 @@
    {
     "id": "q104",
     "type": "param",
-    "rank": 4
+    "rank": 3
    }
   ],
-  "latency_ms_p50": 150.0,
-  "latency_ms_p95": 175.0
+  "latency_ms_p50": 144.0,
+  "latency_ms_p95": 164.9
  },
  "hybrid": {
   "rows": [
@@ -1071,12 +1071,12 @@
    {
     "id": "q001",
     "type": "manual",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q002",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q003",
@@ -1116,12 +1116,12 @@
    {
     "id": "q010",
     "type": "manual",
-    "rank": 3
+    "rank": 5
    },
    {
     "id": "q011",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q012",
@@ -1136,7 +1136,7 @@
    {
     "id": "q014",
     "type": "manual",
-    "rank": 5
+    "rank": 2
    },
    {
     "id": "q015",
@@ -1161,7 +1161,7 @@
    {
     "id": "q019",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q020",
@@ -1201,7 +1201,7 @@
    {
     "id": "q027",
     "type": "manual_de",
-    "rank": 3
+    "rank": 1
    },
    {
     "id": "q028",
@@ -1211,7 +1211,7 @@
    {
     "id": "q029",
     "type": "manual_de",
-    "rank": 7
+    "rank": 2
    },
    {
     "id": "q030",
@@ -1241,12 +1241,12 @@
    {
     "id": "q035",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q036",
     "type": "error",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q037",
@@ -1261,7 +1261,7 @@
    {
     "id": "q039",
     "type": "error",
-    "rank": 7
+    "rank": 1
    },
    {
     "id": "q040",
@@ -1281,7 +1281,7 @@
    {
     "id": "q043",
     "type": "error",
-    "rank": 2
+    "rank": 1
    },
    {
     "id": "q044",
@@ -1296,7 +1296,7 @@
    {
     "id": "q046",
     "type": "error",
-    "rank": 3
+    "rank": 1
    },
    {
     "id": "q047",
@@ -1376,7 +1376,7 @@
    {
     "id": "q062",
     "type": "ros2",
-    "rank": 4
+    "rank": 3
    },
    {
     "id": "q063",
@@ -1556,7 +1556,7 @@
    {
     "id": "q098",
     "type": "param",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q099",
@@ -1576,7 +1576,7 @@
    {
     "id": "q102",
     "type": "param",
-    "rank": 9
+    "rank": 7
    },
    {
     "id": "q103",
@@ -1589,8 +1589,8 @@
     "rank": null
    }
   ],
-  "latency_ms_p50": 154.0,
-  "latency_ms_p95": 176.0
+  "latency_ms_p50": 153.0,
+  "latency_ms_p95": 170.9
  },
  "hybrid+rerank small": {
   "rows": [
@@ -1602,12 +1602,12 @@
    {
     "id": "q001",
     "type": "manual",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q002",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q003",
@@ -1742,7 +1742,7 @@
    {
     "id": "q029",
     "type": "manual_de",
-    "rank": 5
+    "rank": 4
    },
    {
     "id": "q030",
@@ -1772,7 +1772,7 @@
    {
     "id": "q035",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q036",
@@ -1857,7 +1857,7 @@
    {
     "id": "q052",
     "type": "error_symptom",
-    "rank": 3
+    "rank": 4
    },
    {
     "id": "q053",
@@ -2057,7 +2057,7 @@
    {
     "id": "q092",
     "type": "driver",
-    "rank": 5
+    "rank": 4
    },
    {
     "id": "q093",
@@ -2120,8 +2120,8 @@
     "rank": 1
    }
   ],
-  "latency_ms_p50": 1837.8,
-  "latency_ms_p95": 2148.3
+  "latency_ms_p50": 1823.2,
+  "latency_ms_p95": 2143.4
  },
  "hybrid+rerank large": {
   "rows": [
@@ -2133,12 +2133,12 @@
    {
     "id": "q001",
     "type": "manual",
-    "rank": 5
+    "rank": 2
    },
    {
     "id": "q002",
     "type": "manual",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q003",
@@ -2168,7 +2168,7 @@
    {
     "id": "q008",
     "type": "manual",
-    "rank": 1
+    "rank": 4
    },
    {
     "id": "q009",
@@ -2233,7 +2233,7 @@
    {
     "id": "q021",
     "type": "manual",
-    "rank": 2
+    "rank": 3
    },
    {
     "id": "q022",
@@ -2263,7 +2263,7 @@
    {
     "id": "q027",
     "type": "manual_de",
-    "rank": 3
+    "rank": 4
    },
    {
     "id": "q028",
@@ -2288,7 +2288,7 @@
    {
     "id": "q032",
     "type": "manual_de",
-    "rank": 1
+    "rank": 2
    },
    {
     "id": "q033",
@@ -2303,7 +2303,7 @@
    {
     "id": "q035",
     "type": "error",
-    "rank": null
+    "rank": 1
    },
    {
     "id": "q036",
@@ -2588,7 +2588,7 @@
    {
     "id": "q092",
     "type": "driver",
-    "rank": 4
+    "rank": 3
    },
    {
     "id": "q093",
@@ -2651,7 +2651,7 @@
     "rank": 1
    }
   ],
-  "latency_ms_p50": 16066.6,
-  "latency_ms_p95": 18643.0
+  "latency_ms_p50": 15732.4,
+  "latency_ms_p95": 18646.4
  }
 }

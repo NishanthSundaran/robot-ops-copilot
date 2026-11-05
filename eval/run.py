@@ -26,8 +26,9 @@ RES = REPO / "results"
 RERANKERS = {"small": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1", "large": "BAAI/bge-reranker-v2-m3"}
 
 
-def questions(split=None):
-    qs = [json.loads(ln) for ln in open(REPO / "eval" / "questions.jsonl")]
+def questions(split=None, qset="main"):
+    name = "questions.jsonl" if qset == "main" else "questions_heldout.jsonl"
+    qs = [json.loads(ln) for ln in open(REPO / "eval" / name)]
     return [q for q in qs if split in (None, "all", q["split"])]
 
 
@@ -51,9 +52,9 @@ def hit_rank(hits, gold) -> int | None:
     return None
 
 
-def run_retrieval(split):
+def run_retrieval(split, qset="main"):
     from copilot.retrieve import Retriever
-    qs = [q for q in questions(split) if q["gold"]]
+    qs = [q for q in questions(split, qset) if q["gold"]]
     r = Retriever()
     configs = [("bm25", "bm25", None), ("dense", "dense", None), ("hybrid", "hybrid", None),
                ("hybrid+rerank small", "hybrid+rerank", "small"), ("hybrid+rerank large", "hybrid+rerank", "large")]
@@ -74,7 +75,7 @@ def run_retrieval(split):
         print(f"{name:22s} R@1 {m['r1']:.3f}  R@5 {m['r5']:.3f}  MRR {m['mrr']:.3f}  "
               f"p50 {out[name]['latency_ms_p50']} ms", flush=True)
     RES.mkdir(exist_ok=True)
-    (RES / f"retrieval_{split}.json").write_text(json.dumps(out, indent=1))
+    (RES / f"retrieval_{split if qset == 'main' else 'heldout'}.json").write_text(json.dumps(out, indent=1))
 
 
 def metrics_retrieval(rows):
@@ -95,7 +96,7 @@ def run_answers(a):
     out = RES / f"answers_{a.tag}.jsonl"
     RES.mkdir(exist_ok=True)
     done = {json.loads(ln)["id"] for ln in open(out)} if out.exists() else set()
-    qs = [q for q in questions(a.split) if q["id"] not in done]
+    qs = [q for q in questions(a.split, a.qset) if q["id"] not in done]
     with open(out, "a") as f:
         for q in qs:
             try:
@@ -176,9 +177,10 @@ def main() -> None:
     ap.add_argument("--rerank", default="small", choices=["none", "small", "large"])
     ap.add_argument("-k", type=int, default=5)
     ap.add_argument("--tag")
+    ap.add_argument("--qset", default="main", choices=["main", "heldout"])
     a = ap.parse_args()
     if a.what == "retrieval":
-        run_retrieval(a.split)
+        run_retrieval(a.split, a.qset)
     elif a.what == "answers":
         run_answers(a)
     else:

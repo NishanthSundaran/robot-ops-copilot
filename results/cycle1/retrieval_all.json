@@ -1,0 +1,2657 @@
+{
+ "bm25": {
+  "rows": [
+   {
+    "id": "q000",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q001",
+    "type": "manual",
+    "rank": 10
+   },
+   {
+    "id": "q002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q008",
+    "type": "manual",
+    "rank": 4
+   },
+   {
+    "id": "q009",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q010",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q011",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q014",
+    "type": "manual",
+    "rank": 10
+   },
+   {
+    "id": "q015",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q016",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q017",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q018",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q019",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q020",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q021",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q022",
+    "type": "manual_de",
+    "rank": null
+   },
+   {
+    "id": "q023",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "q024",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "q025",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q026",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "q027",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "q028",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q029",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "q030",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q031",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q032",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "q033",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q034",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q035",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q036",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q037",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q038",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q039",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q040",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q041",
+    "type": "error",
+    "rank": 3
+   },
+   {
+    "id": "q042",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q043",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q044",
+    "type": "error",
+    "rank": 3
+   },
+   {
+    "id": "q045",
+    "type": "error",
+    "rank": 2
+   },
+   {
+    "id": "q046",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q047",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q048",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q049",
+    "type": "error",
+    "rank": 7
+   },
+   {
+    "id": "q050",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q051",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q052",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q053",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q054",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q055",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q056",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "q057",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "q058",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q059",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q060",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "q061",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q062",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "q063",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q064",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q065",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q066",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "q067",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q068",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q069",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q070",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "q071",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q072",
+    "type": "ros2",
+    "rank": 6
+   },
+   {
+    "id": "q073",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q074",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q075",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "q076",
+    "type": "moveit",
+    "rank": 3
+   },
+   {
+    "id": "q077",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q078",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q079",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q080",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q081",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q082",
+    "type": "moveit",
+    "rank": 4
+   },
+   {
+    "id": "q083",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q084",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q085",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q086",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q087",
+    "type": "driver",
+    "rank": 3
+   },
+   {
+    "id": "q088",
+    "type": "driver",
+    "rank": 3
+   },
+   {
+    "id": "q089",
+    "type": "driver",
+    "rank": 8
+   },
+   {
+    "id": "q090",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q091",
+    "type": "driver",
+    "rank": null
+   },
+   {
+    "id": "q092",
+    "type": "driver",
+    "rank": null
+   },
+   {
+    "id": "q093",
+    "type": "driver",
+    "rank": 7
+   },
+   {
+    "id": "q094",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q095",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q096",
+    "type": "param",
+    "rank": null
+   },
+   {
+    "id": "q097",
+    "type": "param",
+    "rank": 5
+   },
+   {
+    "id": "q098",
+    "type": "param",
+    "rank": 8
+   },
+   {
+    "id": "q099",
+    "type": "param",
+    "rank": 2
+   },
+   {
+    "id": "q100",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q101",
+    "type": "param",
+    "rank": 3
+   },
+   {
+    "id": "q102",
+    "type": "param",
+    "rank": null
+   },
+   {
+    "id": "q103",
+    "type": "param",
+    "rank": null
+   },
+   {
+    "id": "q104",
+    "type": "param",
+    "rank": null
+   }
+  ],
+  "latency_ms_p50": 8.7,
+  "latency_ms_p95": 14.1
+ },
+ "dense": {
+  "rows": [
+   {
+    "id": "q000",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q001",
+    "type": "manual",
+    "rank": 7
+   },
+   {
+    "id": "q002",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q004",
+    "type": "manual",
+    "rank": 5
+   },
+   {
+    "id": "q005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q008",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "q009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q010",
+    "type": "manual",
+    "rank": 6
+   },
+   {
+    "id": "q011",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q014",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q015",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q016",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q017",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q018",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q019",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q020",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q021",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q022",
+    "type": "manual_de",
+    "rank": 3
+   },
+   {
+    "id": "q023",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q024",
+    "type": "manual_de",
+    "rank": 4
+   },
+   {
+    "id": "q025",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q026",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q027",
+    "type": "manual_de",
+    "rank": 7
+   },
+   {
+    "id": "q028",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q029",
+    "type": "manual_de",
+    "rank": null
+   },
+   {
+    "id": "q030",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q031",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q032",
+    "type": "manual_de",
+    "rank": 3
+   },
+   {
+    "id": "q033",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q034",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q035",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q036",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q037",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q038",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q039",
+    "type": "error",
+    "rank": 2
+   },
+   {
+    "id": "q040",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q041",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q042",
+    "type": "error",
+    "rank": 2
+   },
+   {
+    "id": "q043",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q044",
+    "type": "error",
+    "rank": 2
+   },
+   {
+    "id": "q045",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q046",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q047",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q048",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q049",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q050",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q051",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q052",
+    "type": "error_symptom",
+    "rank": 3
+   },
+   {
+    "id": "q053",
+    "type": "error_symptom",
+    "rank": 10
+   },
+   {
+    "id": "q054",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q055",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q056",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q057",
+    "type": "ros2",
+    "rank": 9
+   },
+   {
+    "id": "q058",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q059",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "q060",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q061",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q062",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q063",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "q064",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q065",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q066",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "q067",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q068",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q069",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q070",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "q071",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q072",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q073",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q074",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q075",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q076",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q077",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q078",
+    "type": "moveit",
+    "rank": null
+   },
+   {
+    "id": "q079",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q080",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q081",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q082",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "q083",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q084",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q085",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q086",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q087",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q088",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q089",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q090",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q091",
+    "type": "driver",
+    "rank": 6
+   },
+   {
+    "id": "q092",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q093",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q094",
+    "type": "driver",
+    "rank": 3
+   },
+   {
+    "id": "q095",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q096",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q097",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q098",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q099",
+    "type": "param",
+    "rank": 2
+   },
+   {
+    "id": "q100",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q101",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q102",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q103",
+    "type": "param",
+    "rank": 7
+   },
+   {
+    "id": "q104",
+    "type": "param",
+    "rank": 4
+   }
+  ],
+  "latency_ms_p50": 150.0,
+  "latency_ms_p95": 175.0
+ },
+ "hybrid": {
+  "rows": [
+   {
+    "id": "q000",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q001",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q008",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "q009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q010",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q011",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q014",
+    "type": "manual",
+    "rank": 5
+   },
+   {
+    "id": "q015",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q016",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q017",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q018",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q019",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q020",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q021",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q022",
+    "type": "manual_de",
+    "rank": null
+   },
+   {
+    "id": "q023",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q024",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q025",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q026",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q027",
+    "type": "manual_de",
+    "rank": 3
+   },
+   {
+    "id": "q028",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q029",
+    "type": "manual_de",
+    "rank": 7
+   },
+   {
+    "id": "q030",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q031",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q032",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q033",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q034",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q035",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q036",
+    "type": "error",
+    "rank": 2
+   },
+   {
+    "id": "q037",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q038",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q039",
+    "type": "error",
+    "rank": 7
+   },
+   {
+    "id": "q040",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q041",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q042",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q043",
+    "type": "error",
+    "rank": 2
+   },
+   {
+    "id": "q044",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q045",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q046",
+    "type": "error",
+    "rank": 3
+   },
+   {
+    "id": "q047",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q048",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q049",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q050",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q051",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q052",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q053",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "q054",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q055",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q056",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "q057",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "q058",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q059",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q060",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q061",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q062",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "q063",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q064",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q065",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q066",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "q067",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q068",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q069",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q070",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "q071",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q072",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q073",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q074",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q075",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q076",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q077",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q078",
+    "type": "moveit",
+    "rank": 6
+   },
+   {
+    "id": "q079",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q080",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q081",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q082",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "q083",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q084",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q085",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q086",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q087",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q088",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q089",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q090",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q091",
+    "type": "driver",
+    "rank": null
+   },
+   {
+    "id": "q092",
+    "type": "driver",
+    "rank": null
+   },
+   {
+    "id": "q093",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q094",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q095",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q096",
+    "type": "param",
+    "rank": null
+   },
+   {
+    "id": "q097",
+    "type": "param",
+    "rank": 2
+   },
+   {
+    "id": "q098",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q099",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q100",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q101",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q102",
+    "type": "param",
+    "rank": 9
+   },
+   {
+    "id": "q103",
+    "type": "param",
+    "rank": null
+   },
+   {
+    "id": "q104",
+    "type": "param",
+    "rank": null
+   }
+  ],
+  "latency_ms_p50": 154.0,
+  "latency_ms_p95": 176.0
+ },
+ "hybrid+rerank small": {
+  "rows": [
+   {
+    "id": "q000",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q001",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "q002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q008",
+    "type": "manual",
+    "rank": 10
+   },
+   {
+    "id": "q009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q010",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q011",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q014",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q015",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q016",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q017",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q018",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q019",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q020",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q021",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q022",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q023",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q024",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q025",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q026",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q027",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q028",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q029",
+    "type": "manual_de",
+    "rank": 5
+   },
+   {
+    "id": "q030",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q031",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q032",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q033",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q034",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q035",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q036",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q037",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q038",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q039",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q040",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q041",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q042",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q043",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q044",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q045",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q046",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q047",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q048",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q049",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q050",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q051",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q052",
+    "type": "error_symptom",
+    "rank": 3
+   },
+   {
+    "id": "q053",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q054",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q055",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q056",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "q057",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q058",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q059",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q060",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q061",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q062",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q063",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q064",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q065",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q066",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q067",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q068",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q069",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q070",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "q071",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q072",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q073",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q074",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q075",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q076",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q077",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q078",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q079",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q080",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q081",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q082",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "q083",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q084",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q085",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q086",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q087",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q088",
+    "type": "driver",
+    "rank": 4
+   },
+   {
+    "id": "q089",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q090",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q091",
+    "type": "driver",
+    "rank": 4
+   },
+   {
+    "id": "q092",
+    "type": "driver",
+    "rank": 5
+   },
+   {
+    "id": "q093",
+    "type": "driver",
+    "rank": 3
+   },
+   {
+    "id": "q094",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q095",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q096",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q097",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q098",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q099",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q100",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q101",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q102",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q103",
+    "type": "param",
+    "rank": 2
+   },
+   {
+    "id": "q104",
+    "type": "param",
+    "rank": 1
+   }
+  ],
+  "latency_ms_p50": 1837.8,
+  "latency_ms_p95": 2148.3
+ },
+ "hybrid+rerank large": {
+  "rows": [
+   {
+    "id": "q000",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q001",
+    "type": "manual",
+    "rank": 5
+   },
+   {
+    "id": "q002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q008",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q010",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q011",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q014",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q015",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q016",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "q017",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q018",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q019",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q020",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "q021",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "q022",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q023",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q024",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q025",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q026",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q027",
+    "type": "manual_de",
+    "rank": 3
+   },
+   {
+    "id": "q028",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q029",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q030",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q031",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q032",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q033",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q034",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "q035",
+    "type": "error",
+    "rank": null
+   },
+   {
+    "id": "q036",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q037",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q038",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q039",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q040",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q041",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q042",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q043",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q044",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q045",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q046",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q047",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q048",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q049",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "q050",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q051",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q052",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q053",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q054",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q055",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "q056",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "q057",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "q058",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q059",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q060",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q061",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q062",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q063",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q064",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q065",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q066",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q067",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q068",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q069",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q070",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "q071",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q072",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "q073",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q074",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q075",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "q076",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q077",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q078",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q079",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q080",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q081",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q082",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "q083",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q084",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q085",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "q086",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q087",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q088",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q089",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q090",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q091",
+    "type": "driver",
+    "rank": 7
+   },
+   {
+    "id": "q092",
+    "type": "driver",
+    "rank": 4
+   },
+   {
+    "id": "q093",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "q094",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q095",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "q096",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q097",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q098",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q099",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q100",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q101",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q102",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q103",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "q104",
+    "type": "param",
+    "rank": 1
+   }
+  ],
+  "latency_ms_p50": 16066.6,
+  "latency_ms_p95": 18643.0
+ }
+}

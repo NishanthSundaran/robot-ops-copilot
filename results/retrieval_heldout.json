@@ -1,0 +1,1057 @@
+{
+ "bm25": {
+  "rows": [
+   {
+    "id": "h000",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "h001",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "h002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h003",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "h004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h008",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h010",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h011",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h014",
+    "type": "manual_de",
+    "rank": null
+   },
+   {
+    "id": "h015",
+    "type": "manual_de",
+    "rank": null
+   },
+   {
+    "id": "h016",
+    "type": "manual_de",
+    "rank": null
+   },
+   {
+    "id": "h017",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h018",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h019",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h020",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h021",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h022",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h023",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h024",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h025",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h026",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h027",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h028",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h029",
+    "type": "ros2",
+    "rank": 10
+   },
+   {
+    "id": "h030",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h031",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "h032",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "h033",
+    "type": "moveit",
+    "rank": 3
+   },
+   {
+    "id": "h034",
+    "type": "moveit",
+    "rank": null
+   },
+   {
+    "id": "h035",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h036",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "h037",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "h038",
+    "type": "driver",
+    "rank": 4
+   },
+   {
+    "id": "h039",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "h040",
+    "type": "param",
+    "rank": 2
+   }
+  ],
+  "latency_ms_p50": 6.5,
+  "latency_ms_p95": 10.9
+ },
+ "dense": {
+  "rows": [
+   {
+    "id": "h000",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "h001",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h002",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "h003",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h008",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h009",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h010",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h011",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h014",
+    "type": "manual_de",
+    "rank": 4
+   },
+   {
+    "id": "h015",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "h016",
+    "type": "manual_de",
+    "rank": 3
+   },
+   {
+    "id": "h017",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h018",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h019",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h020",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h021",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h022",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h023",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h024",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h025",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "h026",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h027",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h028",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h029",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "h030",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h031",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h032",
+    "type": "ros2",
+    "rank": 7
+   },
+   {
+    "id": "h033",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h034",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h035",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h036",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "h037",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "h038",
+    "type": "driver",
+    "rank": null
+   },
+   {
+    "id": "h039",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "h040",
+    "type": "param",
+    "rank": 1
+   }
+  ],
+  "latency_ms_p50": 136.0,
+  "latency_ms_p95": 152.1
+ },
+ "hybrid": {
+  "rows": [
+   {
+    "id": "h000",
+    "type": "manual",
+    "rank": null
+   },
+   {
+    "id": "h001",
+    "type": "manual",
+    "rank": 5
+   },
+   {
+    "id": "h002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h003",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h008",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h010",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h011",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h014",
+    "type": "manual_de",
+    "rank": 10
+   },
+   {
+    "id": "h015",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h016",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "h017",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h018",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h019",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h020",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h021",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h022",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h023",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h024",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h025",
+    "type": "error_symptom",
+    "rank": 3
+   },
+   {
+    "id": "h026",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h027",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h028",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h029",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h030",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h031",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "h032",
+    "type": "ros2",
+    "rank": 10
+   },
+   {
+    "id": "h033",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "h034",
+    "type": "moveit",
+    "rank": 10
+   },
+   {
+    "id": "h035",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h036",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "h037",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "h038",
+    "type": "driver",
+    "rank": 4
+   },
+   {
+    "id": "h039",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "h040",
+    "type": "param",
+    "rank": 1
+   }
+  ],
+  "latency_ms_p50": 149.1,
+  "latency_ms_p95": 164.1
+ },
+ "hybrid+rerank small": {
+  "rows": [
+   {
+    "id": "h000",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h001",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h002",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h004",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h006",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h008",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h009",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h010",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h011",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h014",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h015",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h016",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "h017",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h018",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h019",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h020",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h021",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h022",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h023",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h024",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h025",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h026",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h027",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h028",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h029",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h030",
+    "type": "ros2",
+    "rank": 7
+   },
+   {
+    "id": "h031",
+    "type": "ros2",
+    "rank": 3
+   },
+   {
+    "id": "h032",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "h033",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "h034",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h035",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h036",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "h037",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "h038",
+    "type": "driver",
+    "rank": 3
+   },
+   {
+    "id": "h039",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "h040",
+    "type": "param",
+    "rank": 1
+   }
+  ],
+  "latency_ms_p50": 1847.2,
+  "latency_ms_p95": 2295.2
+ },
+ "hybrid+rerank large": {
+  "rows": [
+   {
+    "id": "h000",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h001",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h002",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h003",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h004",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h005",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h006",
+    "type": "manual",
+    "rank": 3
+   },
+   {
+    "id": "h007",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h008",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h009",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h010",
+    "type": "manual",
+    "rank": 2
+   },
+   {
+    "id": "h011",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h012",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h013",
+    "type": "manual",
+    "rank": 1
+   },
+   {
+    "id": "h014",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h015",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h016",
+    "type": "manual_de",
+    "rank": 2
+   },
+   {
+    "id": "h017",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h018",
+    "type": "manual_de",
+    "rank": 1
+   },
+   {
+    "id": "h019",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h020",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h021",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h022",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h023",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h024",
+    "type": "error",
+    "rank": 1
+   },
+   {
+    "id": "h025",
+    "type": "error_symptom",
+    "rank": 2
+   },
+   {
+    "id": "h026",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h027",
+    "type": "error_symptom",
+    "rank": 1
+   },
+   {
+    "id": "h028",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h029",
+    "type": "ros2",
+    "rank": 1
+   },
+   {
+    "id": "h030",
+    "type": "ros2",
+    "rank": 4
+   },
+   {
+    "id": "h031",
+    "type": "ros2",
+    "rank": 2
+   },
+   {
+    "id": "h032",
+    "type": "ros2",
+    "rank": null
+   },
+   {
+    "id": "h033",
+    "type": "moveit",
+    "rank": 2
+   },
+   {
+    "id": "h034",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h035",
+    "type": "moveit",
+    "rank": 1
+   },
+   {
+    "id": "h036",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "h037",
+    "type": "driver",
+    "rank": 1
+   },
+   {
+    "id": "h038",
+    "type": "driver",
+    "rank": 2
+   },
+   {
+    "id": "h039",
+    "type": "param",
+    "rank": 1
+   },
+   {
+    "id": "h040",
+    "type": "param",
+    "rank": 1
+   }
+  ],
+  "latency_ms_p50": 16030.5,
+  "latency_ms_p95": 18927.9
+ }
+}

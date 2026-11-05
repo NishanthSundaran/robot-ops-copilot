@@ -32,22 +32,31 @@ SPECS = [
             "required": ["query"]}}},
     {"type": "function", "function": {
         "name": "lookup_error_code",
-        "description": "Exact lookup of a Universal Robots error code such as C153A1 or C72: its title, explanation "
-                       "and suggested fix from the official Error Codes Directory.",
+        "description": "Exact lookup of a Universal Robots error code that the user wrote in the question (format "
+                       "C<number> or C<number>A<number>): title, explanation and suggested fix from the official Error "
+                       "Codes Directory. If the user describes a fault without a code, use search_docs with source "
+                       "ur_errors instead.",
         "parameters": {"type": "object", "properties": {"code": {"type": "string"}}, "required": ["code"]}}},
     {"type": "function", "function": {
         "name": "query_trials",
-        "description": "Run one read-only SQLite SELECT over the logged UR3e thesis trials. Tables: "
-                       "trials(trial_id, total_time_s, grasp_success ('True'/'False'), num_guide_cycles, "
-                       "peak_force_N, mean_force_N, double_tap_time_ms, displacement_m, phase_<NAME>_s ...); "
-                       "guide_cycles(trial_id, cycle, duration_s, peak_force_N, mean_force_N, peak_velocity_mps, "
-                       "latency_ms); state_transitions(trial_id, time_s, from_state, to_state). trial_id is the "
-                       "start time YYYYMMDD_HHMMSS. Values are stored as text: CAST(x AS REAL) for maths.",
+        "description": "Run one read-only SQLite SELECT over the 38 logged UR3e thesis trials. Tables and columns: "
+                       "trials(trial_id TEXT 'YYYYMMDD_HHMMSS', trial_date TEXT 'YYYY-MM-DD', total_time_s REAL, "
+                       "grasp_success INTEGER 1/0, num_guide_cycles REAL, peak_force_N REAL (the highest force in "
+                       "that trial), mean_force_N REAL (the average force in that trial), double_tap_time_ms REAL, "
+                       "displacement_m REAL, phase_<STATE>_s REAL time spent in each state, e.g. "
+                       "phase_AWAIT_INTERACTION_s); guide_cycles(trial_id, cycle, duration_s, peak_force_N, "
+                       "mean_force_N, peak_velocity_mps, latency_ms); state_transitions(trial_id, time_s, from_state, "
+                       "to_state) with states such as IDLE, NUDGE, GUIDING. Examples: success rate = "
+                       "SELECT AVG(grasp_success) FROM trials; trials on a day = SELECT COUNT(*) FROM trials WHERE "
+                       "trial_date='2026-04-21'; transitions = SELECT from_state, to_state, COUNT(*) FROM "
+                       "state_transitions GROUP BY 1, 2 ORDER BY 3 DESC.",
         "parameters": {"type": "object", "properties": {"sql": {"type": "string"}}, "required": ["sql"]}}},
     {"type": "function", "function": {
         "name": "get_parameter",
-        "description": "Look up a ROS 2 parameter of the thesis UR3e stack (safety monitor, hybrid controller, servo, "
-                       "proximity monitor, MoveIt limits) by name, e.g. max_guide_force or near_dist.",
+        "description": "Look up a parameter in the thesis's own ROS 2 YAML files (safety_monitor, hybrid_control_node, "
+                       "proximity_monitor, servo, joint_limits) by its exact name, e.g. max_guide_force or near_dist. "
+                       "Only for questions about the thesis stack's configuration. UR robot safety limits, Recovery "
+                       "Mode, ROS 2, MoveIt and UR driver settings are in the documentation: use search_docs.",
         "parameters": {"type": "object", "properties": {"name": {"type": "string"}}, "required": ["name"]}}},
 ]
 
@@ -69,8 +78,21 @@ class Tools:
     # each returns (text for the model, [source dicts])
     def search_docs(self, query: str, source: str = "all"):
         hits = self.r.search(query, self.k, self.mode, None if source in (None, "all") else SOURCES.get(source))
-        return "", [{"doc": c["doc"], "page": c["page"], "title": c["title"], "id": c["id"], "text": c["text"],
-                     "score": round(s, 3)} for c, s in hits]
+        return "", [{"doc": c["doc"], "page": c["page"], "title": c["title"], "id": c["id"],
+                     "text": self._expand(c), "score": round(s, 3)} for c, s in hits]
+
+    def _expand(self, c: dict) -> str:
+        """A hit brings the next window of the same page: a 220-word window often holds the start of a table
+        and its next window the row asked about (cycle 2: the mains voltage row of the spec table)."""
+        by_id = getattr(self.r, "by_id", None)
+        if not by_id:
+            return c["text"]
+        head, _, k = c["id"].rpartition(":")
+        nxt = by_id.get(f"{head}:{int(k) + 1}") if k.isdigit() else None
+        if nxt is None:
+            return c["text"]
+        tail = nxt["text"].split()[40:]  # windows overlap by 40 words
+        return c["text"] + " " + " ".join(tail)
 
     def lookup_error_code(self, code: str):
         code = code.strip().upper().replace(" ", "")
@@ -111,8 +133,12 @@ class Tools:
             cur = con.execute(s)
             rows = cur.fetchmany(51)
             cols = [d[0] for d in cur.description]
-        except sqlite3.Error as e:
-            return f"SQL error: {e}", []
+        except sqlite3.Error as e:  # give the schema back so the model can correct the query
+            schema = "; ".join(f"{t}({', '.join(r[1] for r in con.execute(f'PRAGMA table_info({t})'))})"
+                               for (t,) in con.execute("SELECT name FROM sqlite_master WHERE type='table'"))
+            return f"SQL error: {e}. Tables: {schema}", []
+        if not rows:
+            return f"The query returned 0 rows: SQL: {s}", []
         txt = " | ".join(cols) + "\n" + "\n".join(" | ".join(str(v) for v in r) for r in rows[:50])
         if len(rows) > 50:
             txt += "\n(more rows cut off; aggregate in SQL)"
@@ -120,22 +146,19 @@ class Tools:
                      "text": f"SQL: {s}\nResult:\n{txt}"}]
 
     def get_parameter(self, name: str):
+        """Exact name, or a name that contains it. No fuzzy guessing: in the first evaluation round a near match
+        (max_guide_force for any 'force limit') was reported as the answer to questions about the UR manual."""
         key = name.strip().split(".")[-1].lower()
-        exact = [p for p in self.params if p["name"].split(".")[-1].lower() == key]
-        hits = exact or [p for p in self.params if key in p["name"].lower()]
-        note = ""
-        if not hits:  # the model often guesses a near name (max_guide_velocity for max_guide_speed)
+        hits = [p for p in self.params if p["name"].split(".")[-1].lower() == key] or \
+               [p for p in self.params if key in p["name"].lower() and len(key) >= 4]
+        if not hits:
             want = set(re.split(r"[_\W]+", key)) - {""}
             want |= {SYN[w] for w in want if w in SYN}
-            def score(p):
-                have = set(re.split(r"[_\W]+", p["name"].lower()))
-                return len(want & have) + difflib.SequenceMatcher(None, key, p["name"].split(".")[-1].lower()).ratio()
-            ranked = sorted(self.params, key=score, reverse=True)
-            hits = [p for p in ranked[:6] if score(p) >= 1.4]
-            if not hits:
-                return f"No parameter '{name}'. Try search_docs with source 'thesis'.", []
-            note = f"No parameter named exactly '{name}'. The closest names are:"
-        return note, [{"doc": p["file"], "page": 0, "title": p["name"], "id": f"param:{p['file']}:{p['name']}",
+            ov = {p["name"]: len(want & set(re.split(r"[_\W]+", p["name"].split(".")[-1].lower()))) for p in self.params}
+            near = sorted((n for n, k in ov.items() if k >= 2), key=lambda n: -ov[n])
+            return (f"No thesis parameter named '{name}'." + (f" Similar names: {', '.join(near[:5])}." if near else "")
+                    + " If the question is not about the thesis configuration, use search_docs."), []
+        return "", [{"doc": p["file"], "page": 0, "title": p["name"], "id": f"param:{p['file']}:{p['name']}",
                      "text": f"{p['name']} = {p['value']}" + (f"  # {p['comment']}" if p["comment"] else "")
                      + f" (file {p['file']})"} for p in hits[:8]]
 

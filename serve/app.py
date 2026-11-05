@@ -107,7 +107,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
 const $=id=>document.getElementById(id),f=$('f'),q=$('q'),out=$('out'),a=$('a'),src=$('src');
 f.onsubmit=async e=>{e.preventDefault();out.style.display='block';a.textContent='Thinking...';src.textContent='';
 const r=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q.value})});
-const j=await r.json();a.textContent=j.answer||j.detail;src.textContent=(j.sources||[]).map(s=>`[${s.n}] ${s.doc}${s.doc.endsWith('.pdf')?' p.'+s.page:''}: ${s.title}`).join('\\n')+`\\n${j.latency_s||''} s`;};
+const j=await r.json();a.textContent=j.answer||j.detail;src.textContent=(j.sources||[]).map(s=>`[${s.n}] ${s.doc}${s.doc.endsWith('.pdf')?' p.'+s.page:''}: ${s.title}`).join('\\n')+`\\n${[...new Set((j.tool_calls||[]).map(t=>t.ran||t.tool))].join(', ')||'no tools'}, ${j.latency_s??''} s`;};
 </script></body></html>"""
 
 

@@ -62,27 +62,29 @@ def clean_lines(text: str) -> list[str]:
     return [ln.strip() for ln in text.splitlines() if ln.strip() and not NOISE.match(ln.strip())]
 
 
-def pdf_chunks(path, source: str, lang: str):
+def pdf_chunks(path, source: str, lang: str, carry: int = 60):
+    """One page -> 220-word windows. Each page also carries the first `carry` words of the next page, because
+    tables and procedures run over page breaks ('as defined in the table below' on one page, the table on the
+    next); without the carry the page that introduces a table has no answer and the next page has no context."""
     doc = fitz.open(path)
+    pages = []
     section = ""
     for pno, page in enumerate(doc, start=1):
         lines = clean_lines(page.get_text())
-        if not lines:
-            continue
-        # a table-of-contents page is all headings; index it but do not let it set the section
         heads = [ln for ln in lines if is_heading(ln)]
-        toc = len(heads) > 0.5 * len(lines)
-        body = []
-        title_here = section
+        toc = bool(lines) and len(heads) > 0.5 * len(lines)
         for ln in lines:
             m = is_heading(ln)
             if m and not toc:
                 section = f"{m.group(1)}. {m.group(2)}"
-                title_here = title_here or section
-            body.append(ln)
-        for k, t in enumerate(windows(" ".join(body))):
+        pages.append((pno, "Contents" if toc else section, " ".join(lines)))
+    for i, (pno, title, body) in enumerate(pages):
+        if not body:
+            continue
+        nxt = pages[i + 1][2].split()[:carry] if i + 1 < len(pages) else []
+        for k, t in enumerate(windows(body + (" " + " ".join(nxt) if nxt else ""))):
             yield {"id": f"{source}:p{pno}:{k}", "source": source, "doc": path.name, "page": pno,
-                   "title": section if not toc else "Contents", "lang": lang, "text": t}
+                   "title": title, "lang": lang, "text": t}
 
 
 ENTRY = re.compile(r"^(C\d+A\d+)\s+(.*)$")
@@ -213,7 +215,20 @@ def thesis_chunks(cfg_dir):
                    "title": p.name, "lang": "en", "text": w}
 
 
+def _num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def load_trials(exp_dir, db):
+    """CSV logs -> typed SQLite tables. Numbers are stored as REAL (a text column makes MAX() and '> 20' compare
+    strings, which the first evaluation round caught), grasp_success as 0/1, and trials gets a trial_date column
+    (YYYY-MM-DD) taken from the trial id, so date questions need no string surgery."""
+    import os
+    if os.path.exists(db):
+        os.remove(db)
     con = sqlite3.connect(db)
     for table, prefix in (("trials", "task_summary"), ("guide_cycles", "guide_cycles"),
                           ("state_transitions", "state_transitions")):
@@ -225,9 +240,27 @@ def load_trials(exp_dir, db):
                 continue
             cols = cols or list(r[0].keys())
             rows += [[x.get(c) for c in cols] for x in r]
-        con.execute(f"DROP TABLE IF EXISTS {table}")
-        con.execute(f"CREATE TABLE {table} ({', '.join(cols)})")
-        con.executemany(f"INSERT INTO {table} VALUES ({', '.join('?' * len(cols))})", rows)
+        numeric = [c for c in cols if c not in ("trial_id", "from_state", "to_state", "grasp_success")
+                   and all(_num(v) is not None for row in rows for v in [row[cols.index(c)]] if v not in (None, ""))]
+        defs = []
+        for c in cols:
+            defs.append(f"{c} {'REAL' if c in numeric else 'INTEGER' if c == 'grasp_success' else 'TEXT'}")
+        if table == "trials":
+            defs.append("trial_date TEXT")
+        con.execute(f"CREATE TABLE {table} ({', '.join(defs)})")
+        for row in rows:
+            vals = []
+            for c, v in zip(cols, row):
+                if c in numeric:
+                    vals.append(_num(v) if v not in (None, "") else None)
+                elif c == "grasp_success":
+                    vals.append(1 if str(v).strip().lower() == "true" else 0)
+                else:
+                    vals.append(v)
+            if table == "trials":
+                t = row[0]
+                vals.append(f"{t[:4]}-{t[4:6]}-{t[6:8]}")
+            con.execute(f"INSERT INTO {table} VALUES ({', '.join('?' * len(vals))})", vals)
     con.commit()
     return {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
             for t in ("trials", "guide_cycles", "state_transitions")}

@@ -60,11 +60,11 @@ add("manual", "With external mode selection, is the robot in Automatic or Manual
 add("manual", "What is the disagreement tolerance between the two input channels of a Three-Position Enabling Device?",
     [[EN, 90]], [["1 s", "1s", "1 second", "one second"]])
 add("manual", "What supply does the remote ON/OFF control provide when the Control Box is off?", [[EN, 92]],
-    [["12 v", "12v"]])
+    [["12 v", "12v", "12-v"]])
 add("manual", "What does the Tool Force safety limit restrict?", [[EN, 130]],
     [["force"], ["clamp"]])
 add("manual", "What are the speed and force limits while the robot is in Recovery Mode?", [[EN, 200]],
-    [["250 mm/s", "250mm/s"], ["100 n", "100n"]])
+    [["250 mm/s", "250mm/s", "0.25 m/s"], ["100 n", "100n"]])
 add("manual", "What happens if a Recovery Mode safety limit is violated?", [[EN, 200]],
     [["category 0", "stop category 0", "cat 0"]])
 add("manual", "During forced back-driving, how far at most should a joint be moved?", [[EN, 197]],
@@ -88,7 +88,7 @@ add("manual_de", "Mit welchen Schrauben und welchem Drehmoment wird der UR3e-Rob
 add("manual_de", "Wie lange soll der Roboter nach dem Betrieb abkühlen, bevor man ihn berührt?", [[EN, 31]],
     [["eine stunde", "1 stunde", "einer stunde", "60 min"]], de="Stunde")
 add("manual_de", "Welche Geschwindigkeits- und Kraftgrenzen gelten im Wiederherstellungsmodus?", [[EN, 200]],
-    [["250 mm/s", "250mm/s"], ["100 n", "100n"]], de=[217])
+    [["250 mm/s", "250mm/s", "0.25 m/s"], ["100 n", "100n"]], de=[217])
 add("manual_de", "Welche Stoppkategorie führt ein Schutzstopp (Safeguard Stop) aus?", [[EN, 84]],
     [["kategorie 2", "category 2", "stoppkategorie 2"]], de="Kategorie 2")
 add("manual_de", "Wie viel Platz braucht die Tür des Schaltschranks zum vollständigen Öffnen?", [[EN, 211]],
@@ -102,7 +102,7 @@ add("manual_de", "Wie bringe ich den Roboter für den Transport in die Put-in-Bo
 add("manual_de", "Wie weit darf ein Gelenk beim erzwungenen Zurückfahren höchstens bewegt werden?", [[EN, 197]],
     [["160"]], de="160")
 add("manual_de", "Welche Spannung liefert die Fern-EIN/AUS-Steuerung, wenn der Schaltschrank aus ist?", [[EN, 92]],
-    [["12 v", "12v"]], de="12V")
+    [["12 v", "12v", "12-v"]], de="12V")
 add("manual_de", "Was zeigt der Bereich Gelenklast im Protokoll-Tab für jedes Gelenk an?", [[EN, 216]],
     [["temperatur"], ["spannung"]], de="Temperatur")
 
@@ -146,7 +146,7 @@ add("error_symptom", "Our tool digital output keeps switching itself off. What d
 add("error_symptom", "What should I check for an emergency stop disagreement fault?", [[ERR, "C192A2"]],
     [["safety device", "cable", "connection"]])
 add("error_symptom", "What can a joint encoder 'signal lost' warning mean?", [[ERR, "C74A32"]],
-    [["readhead"], ["ring"]])
+    [["readhead", "read head", "read-head"], ["ring"]])
 add("error_symptom", "The controller says the robot cable extender is configured but not detected. What can I do?",
     [[ERR, "C351A5"]], [["unconfigure", "connect"]])
 add("error_symptom", "The arm could not follow its path and the elbow joint reported it. What are the usual causes?",
@@ -223,7 +223,7 @@ add("driver", "Which URCap do I need on an e-Series robot for the ROS 2 driver, 
     [[UD + "installation/install_urcap_e_series.rst", 0]], [["externalcontrol", "external control"], ["5.1"]])
 RI = UD + "ROS_INTERFACE.md"
 add("driver", "What does headless_mode do in the UR driver?", [[RI, 3]],
-    [["urscript"], ["remote"]])
+    [["urscript", "script"], ["remote"]])
 add("driver", "What is the allowed range of servoj_gain?", [[RI, 6]], [["100"], ["3000"]])
 add("driver", "What happens if the robot's calibration does not match the kinematics hash?", [[RI, 4]],
     [["error"]])
@@ -259,7 +259,7 @@ add("param", "Welche maximale Handführungsgeschwindigkeit ist im Safety Monitor
 # ---------------- thesis trial logs (needs the SQL tool; no retrieval gold)
 add("trials", "How many trials were logged in total?", [], [["38"]])
 add("trials", "How many trials ended with a successful grasp?", [], [["28"]])
-add("trials", "What was the grasp success rate over all logged trials?", [], [["73.7", "74", "73,7", "28/38",
+add("trials", "What was the grasp success rate over all logged trials?", [], [["73.7", "73.68", "74", "73,7", "28/38",
                                                                                     "28 of 38", "28 out of 38"]])
 add("trials", "What was the average total time of the successful trials?", [], [["41.3"]])
 add("trials", "Which trial had the highest peak force, and how high was it?", [], [["20260422_172522"], ["47.06",
@@ -291,6 +291,32 @@ for q in ["How do I connect the UR3e to a KUKA KR C4 controller?",
           "How many trials did the thesis run with the Franka Panda?",
           "Was kostet ein Wartungsvertrag für den UR3e?"]:
     add("unanswerable", q, [], [])
+
+
+# Accepted spellings added after reviewing cycle-1 answers by hand. Each was a correct answer the grader missed;
+# nothing was added for a wrong answer:  0.25 m/s (= 250 mm/s), "read head" (= readhead), 73.68 (= 73.7 %).
+GRADER_CHANGES = ["0.25 m/s for 250 mm/s (q015, q026)", "read head for readhead (q054)", "73.68 for 73.7 (q107)",
+                  "script for URScript (q088, cycle 2: 'sends the script code directly')",
+                  "12-v for 12 V (q033, cycle 3: '12-V-Hilfsstromversorgung')"]
+
+
+def en_to_de_pages(chunks):
+    """English manual questions also accept the German page with the same content: a page in the same numbered
+    section whose text contains the answer's number (decimal comma). Retrieving it is a correct retrieval."""
+    import re
+    for q in Q:
+        if q["type"] != "manual":
+            continue
+        en_page = q["gold"][0][1]
+        sec = next((c["title"] for c in chunks if c["doc"] == EN and c["page"] == en_page), "")
+        num = re.match(r"^\d+(\.\d+)*", sec)
+        keys = [x.replace(".", ",") for g in q["facts"] for x in g if re.search(r"\d", x)]
+        if not keys or not num:
+            continue
+        pages = sorted({c["page"] for c in chunks if c["doc"] == DE and c["title"].startswith(num.group(0) + ".")
+                        and any(k in c["text"] for k in keys)})
+        if 0 < len(pages) <= 3:
+            q["gold"] += [[DE, p] for p in pages]
 
 
 def error_pages():
@@ -327,6 +353,7 @@ def de_pages(chunks):
 def main() -> None:
     chunks = [json.loads(ln) for ln in open(INDEX / "chunks.jsonl")]
     de_pages(chunks)
+    en_to_de_pages(chunks)
     error_pages()
     out = REPO / "eval" / "questions.jsonl"
     with open(out, "w") as f:
