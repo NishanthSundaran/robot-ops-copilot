@@ -7,6 +7,9 @@ it could not find it. Everything runs on one laptop (RTX 3060, 6 GB); no questio
 
 ![service](docs/service.png)
 
+Demo video: [docs/demo.mp4](docs/demo.mp4) (32 s, four questions asked through the page in one take; the time
+the model spends generating is shown at 4x and labelled, answer latencies are printed under each answer).
+
 *Four questions through the service page: a German manual question, an error code, a question the agent answers
 with SQL over the trial logs, and one about another robot, which it refuses.*
 
